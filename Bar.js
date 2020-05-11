@@ -6,7 +6,7 @@ import {
   View,
   ViewPropTypes,
 } from 'react-native';
-import LinearGradient from "expo-linear-gradient";
+import {LinearGradient} from "expo-linear-gradient";
 
 const INDETERMINATE_WIDTH_FACTOR = 0.3;
 const BAR_WIDTH_ZERO_POSITION = INDETERMINATE_WIDTH_FACTOR / (1 + INDETERMINATE_WIDTH_FACTOR);
