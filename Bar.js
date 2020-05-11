@@ -6,7 +6,7 @@ import {
   View,
   ViewPropTypes,
 } from 'react-native';
-import LinearGradient from "react-native-linear-gradient";
+import LinearGradient from "expo-linear-gradient";
 
 const INDETERMINATE_WIDTH_FACTOR = 0.3;
 const BAR_WIDTH_ZERO_POSITION = INDETERMINATE_WIDTH_FACTOR / (1 + INDETERMINATE_WIDTH_FACTOR);
@@ -33,10 +33,9 @@ export default class ProgressBar extends Component {
     animationConfig: PropTypes.object.isRequired,
     animationType: PropTypes.oneOf(['decay', 'timing', 'spring']),
     gradient: PropTypes.shape({
-      start: LinearGradient.propTypes.start,
-      end: LinearGradient.propTypes.end,
-      colors: LinearGradient.propTypes.colors,
-      locations: LinearGradient.propTypes.locatios,
+      start: PropTypes.object,
+      end: PropTypes.object,
+      colors: PropTypes.array,
     }),
   };
 

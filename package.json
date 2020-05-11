@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "prop-types": "^15.5.8",
-    "react-native-linear-gradient": "^2.2.0"
+    "expo-linear-gradient": "^8.1.0"
   },
   "typings": "index.d.ts"
 }
